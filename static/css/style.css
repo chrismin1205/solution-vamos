@@ -1,0 +1,156 @@
+.main-banner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FBEAEB;
+
+}
+
+h2.title-text {
+  font-family: '20db';
+  font-size: 65px;
+  margin: 20px;
+  color: #2E3C7E;
+  cursor: default;
+}
+
+form.search-form {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+input.search-box {
+  font-size: 28px;
+  padding: 10px 15px;
+  border: 3px solid #2E3C7E;
+  caret-color: #2E3C7E;
+  background-color: #fff;
+  width: 45%;
+}
+
+form.search-form .btn-submit {
+  background-color: #2E3C7E;
+  color: #fff;
+  border: none;
+  padding: 6px 32px;
+  font-size: 23px;
+  cursor: pointer;
+}
+
+
+footer.footer {
+  background-color: #2E3C7E;
+  color: #fff;
+  height: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 200px;
+}
+
+footer.footer .footer-left {
+  font-size: 16px;
+}
+
+footer.footer .footer-right {
+  width: 250px;
+}
+footer.footer .footer-right img {
+   width: 100%;
+}
+
+
+/* result.html */
+.result-header {
+  background-color: #2E3C7E;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.result-header h2.title-text {
+  color: #fff;
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.result-header .logo-top {
+  width: 250px;
+}
+
+.result-header .logo-top img {
+  width: 100%;
+}
+
+.search-another {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FBEAEB;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* gap: 50px; */
+  padding: 35px 250px;
+}
+
+.tabs a {
+  display: block;
+  width: 100%;
+  font-size: 24px;
+  color: #808080;
+  font-family: 'Pretendard';
+  border-bottom: 2px solid #808080;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.tabs a.active,
+.tabs a:hover
+ {
+  color: #2E3C7E;
+  border-bottom: 3px solid #2E3C7E;
+  font-weight: 600;
+}
+
+
+.contents {
+  margin: 0 150px;
+}
+
+.content-title {
+  font-size: 35px;
+  font-weight: 600;
+  font-family: 'Pretendard';
+  color: #2E3C7E;
+  margin: 15px 0 15px;
+}
+
+.content-list { 
+  font-family: 'Pretendard';
+}
+
+.content-list h4 {
+  color: #363636;
+  font-size: 28px;
+  padding: 35px 0;
+  font-family: 'Pretendard';
+  border-bottom: 2px solid #2E3C7E;
+}
+
+.content-list p {
+  padding: 35px 0;
+  color: #363636;
+  font-family: 'Pretendard';
+  font-size: 22px;
+  line-height: 1.7;
+}
