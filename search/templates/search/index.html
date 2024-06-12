@@ -37,9 +37,20 @@
   <!-- main -->
   <div class="main-banner">
     <h2 class="title-text">SOLUTION VAMOS</h2>
-    <form action="" action="" method="get" class="search-form">
-      <input type="text" id="search" class="search-box" name="" placeholder="">
-      <button class="btn-submit" type="submit" onclick="location.href='/result'">검색</button>
+    <form action="" action="{% url 'detail' %}" method="POST" class="search-form">
+      {% csrf_token %}
+      <input type="search" id="Search" class="search-box" name="searched" aria-label="Search" placeholder="">
+      <button class="btn-submit" type="submit">검색</button>
+      <div class="tag-box">
+
+        {{ count }}
+        {{ list_work }}
+
+        {% for item in list_work %}
+        <a class="tag" href="/result/{{ item.id }}">{{ item.work.work_name }}</a>
+        {% endfor %}
+
+      </div>
     </form>
   </div>
 
